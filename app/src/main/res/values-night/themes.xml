@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Crmapp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_700</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/purple_500</item>
+        <item name="colorSecondaryVariant">@color/purple_500</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:textColorPrimary">@color/grey_200</item>
+
+    </style>
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="layoutBackground" parent="">
+        <item name="android:solidColor">#201E1E</item>
+    </style>
+    <style name="CustomOutlineBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#1D1D1D</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="hintTextColor">#1D1D1D</item>
+
+    </style>
+    <style name="CustomDropDown"  parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:textColorHint">@color/black</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="textFillColor">@color/white</item>
+        <item name="boxStrokeColor">#1D1D1D</item>
+        <item name="endIconMode">dropdown_menu</item>
+        <item name="popupMenuBackground">@color/white</item>
+        <item name="android:dropDownSelector">@color/purple_700</item>
+    </style>
+</resources>

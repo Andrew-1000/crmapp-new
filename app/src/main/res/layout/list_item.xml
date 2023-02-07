@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+
+    <TextView
+        android:id="@+id/tvfName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ListItemTextView"
+        android:text="@string/FName"/>
+    <TextView
+        android:id="@+id/tvlName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ListItemTextView"
+        android:text="@string/LName"/>
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ListItemTextView"
+        android:text="@string/EMail"/>
+    <TextView
+        android:id="@+id/tvPhone_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ListItemTextView"
+        android:text="@string/Phone_no"/>
+    <TextView
+        android:id="@+id/tvCLose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ListItemTextView"
+        android:text="@string/close"/>
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ListItemTextView"
+        android:text="@string/status"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/ibEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delivery_svgrepo_com"/>
+        <ImageButton
+            android:id="@+id/ibDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delivery_svgrepo_com"/>
+
+    </LinearLayout>
+
+</LinearLayout>
