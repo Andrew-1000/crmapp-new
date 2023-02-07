@@ -7,7 +7,7 @@
     <string name="developed_by_company_xyz">Developed By Earl Centre Ltd</string>
     <string name="backgroundimage">background image</string>
     <string name="logo">Logo</string>
-    <string name="name">Name</string>
+    <string name="name">Afrimac Nut</string>
     <string name="names">Name:</string>
     <string name="company_limited">Company Limited</string>
     <string name="purchase">Purchase</string>
@@ -50,6 +50,7 @@
     <string name="farmer_type">Farmer Type:</string>
     <string name="phone_no">Phone No.</string>
     <string name="select_farmer_type">Select Farmer Type</string>
+    <string name="select_gender">Select Gender</string>
     <string name="date">Date</string>
     <string name="dd_mm_yyyy">DD/MM/YYYY</string>
     <string name="payment_purpose">Payment Purpose:</string>

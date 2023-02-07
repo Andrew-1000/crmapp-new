@@ -1,5 +1,7 @@
 package com.example.crmapp.classes;
 
+import com.example.crmapp.interfaces.ApiInterface;
+
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
@@ -9,10 +11,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
     private static Retrofit retrofit = null;
-    public static String BASE_URL = "http://192.168.100.3/agritech/API/";
 
 
-    public static Retrofit getMainclient(){
+
+    public static Retrofit getMainClient(){
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient client = new OkHttpClient.Builder()
@@ -23,7 +25,7 @@ public class ApiClient {
                 .build();
 
         if(retrofit == null){
-            retrofit = new Retrofit.Builder().baseUrl(BASE_URL)
+            retrofit = new Retrofit.Builder().baseUrl(ApiInterface.Base_Url)
                     .client(client)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();

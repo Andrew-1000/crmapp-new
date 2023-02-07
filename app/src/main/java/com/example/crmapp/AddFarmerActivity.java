@@ -43,7 +43,7 @@ public class AddFarmerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_farmer);
-        selectFarmer = findViewById(R.id.farmerTypes);
+        selectFarmer = findViewById(R.id.growerType);
 
         ArrayAdapter<String> farmerTypeArrAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, farmerTypes);
         selectFarmer.setAdapter(farmerTypeArrAdapter);
@@ -51,7 +51,7 @@ public class AddFarmerActivity extends AppCompatActivity {
         activity = AddFarmerActivity.this;
         context = AddFarmerActivity.this;
 
-        apiInterface = ApiClient.getMainclient().create(ApiInterface.class);
+        apiInterface = ApiClient.getMainClient().create(ApiInterface.class);
 
         farmerName = findViewById((R.id.farmerName));
         farmerPhoneNo = findViewById((R.id.farmerPhoneNo));

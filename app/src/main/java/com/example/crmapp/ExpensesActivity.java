@@ -52,7 +52,7 @@ public class ExpensesActivity extends AppCompatActivity {
 
         activity = ExpensesActivity.this;
         context = ExpensesActivity.this;
-        apiInterface = ApiClient.getMainclient().create(ApiInterface.class);
+        apiInterface = ApiClient.getMainClient().create(ApiInterface.class);
 
         selectedDate = findViewById(R.id.dateOfPayment);
         pymnetPurpose = findViewById(R.id.pymnetPurpose);
@@ -88,10 +88,7 @@ public class ExpensesActivity extends AppCompatActivity {
         saveExpenseButton = findViewById(R.id.saveExpenseButton);
         cancel_button = findViewById(R.id.cancel_button);
 
-        saveExpenseButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {submitData();  }
-        });
+        saveExpenseButton.setOnClickListener(view -> submitData());
 
         cancel_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,7 +112,7 @@ public class ExpensesActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<StatusResponse> call, Response<StatusResponse> response) {
                 if(response.isSuccessful()){
-                    Toast.makeText(ExpensesActivity.this,  response.body().getMessage() + ", expenseID - " + response.body().getData(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ExpensesActivity.this,  "Expense Recorded", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(context, ExpensesActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
@@ -126,7 +123,7 @@ public class ExpensesActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<StatusResponse> call, Throwable t) {
-                Toast.makeText(ExpensesActivity.this, "Some error occurred while calling the API 2", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ExpensesActivity.this, "Some error occurred while calling the API [2]", Toast.LENGTH_SHORT).show();
 
             }
         });

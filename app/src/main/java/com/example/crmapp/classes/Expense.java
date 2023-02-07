@@ -4,6 +4,7 @@ public class Expense {
 
         private String ID;
         private String expenseDate;
+        private String pymnetPurpose;
         private String amount;
 
         public String getID() {
@@ -21,6 +22,14 @@ public class Expense {
         public void setExpenseDate(String expenseDate) {
             this.expenseDate = expenseDate;
         }
+
+        public String getPymnetPurpose() {
+        return pymnetPurpose;
+    }
+
+        public void setPymnetPurpose(String pymnetPurpose) {
+        this.pymnetPurpose = pymnetPurpose;
+    }
 
         public String getAmount() {
             return amount;

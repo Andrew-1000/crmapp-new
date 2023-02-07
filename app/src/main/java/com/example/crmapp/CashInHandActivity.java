@@ -41,7 +41,7 @@ public class CashInHandActivity extends AppCompatActivity {
         activity = CashInHandActivity.this;
         context = CashInHandActivity.this;
 
-        apiInterface = ApiClient.getMainclient().create(ApiInterface.class);
+        apiInterface = ApiClient.getMainClient().create(ApiInterface.class);
 
 //        edit text fields
         openingBalanceInpt = findViewById(R.id.openingBalanceInpt);
