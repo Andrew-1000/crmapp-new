@@ -29,6 +29,8 @@ public class DispatchActivity extends AppCompatActivity {
     private ArrayList<Driver> driversList;
     private ArrayList<Vehicle> vehicleList;
 
+
+    //declared variables
     AppCompatAutoCompleteTextView driverOptions;
     AppCompatAutoCompleteTextView vehicleOptions;
     AppCompatAutoCompleteTextView centerOptns;
