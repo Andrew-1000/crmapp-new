@@ -39,6 +39,7 @@ public class PurchaseActivity extends AppCompatActivity {
         totlWeightCaptured = findViewById(R.id.totalWeightCaptured);
         payButton = findViewById(R.id.pay);
         tareWeightBtn = findViewById(R.id.tareWeightButton);
+        getWeightFromBluetooth();
 //        paymnt_types = findViewById(R.id.payment_type);
 
         //An Array adapter to populate data onto our list
@@ -63,6 +64,12 @@ public class PurchaseActivity extends AppCompatActivity {
                 sendFormTDataToAnotherActivity();
             }
         });
+    }
+
+    private void getWeightFromBluetooth() {
+        Intent intent = getIntent();
+        String weight = intent.getStringExtra("weightValue");
+        totlWeightCaptured.setText(weight);
     }
 
     private void sendFormTDataToAnotherActivity() {

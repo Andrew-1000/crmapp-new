@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -26,7 +27,10 @@ public class SettingsActivity extends AppCompatActivity {
         addBluetoothDevice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SettingsActivity.this, BluetoothDevicesListActivity.class);
+                @SuppressLint({"NewApi", "LocalSuppress"}) Intent
+//                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                    intent = new Intent(getApplicationContext(), MainsActivity.class);
+//                }
                 startActivity(intent);
 
             }

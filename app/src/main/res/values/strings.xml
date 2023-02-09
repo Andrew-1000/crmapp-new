@@ -112,6 +112,7 @@
     <string name="driver_code">Driver Code:</string>
     <string name="enter_driver_code">Enter Driver Code</string>
     <string name="receipts">Receipts</string>
+    <string name="ble_playground">BLE Connectivity</string>
 
 
 </resources>
